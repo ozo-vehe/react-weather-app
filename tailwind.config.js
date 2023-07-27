@@ -7,9 +7,9 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'bg1': "url('./src/assets/background.png')",
+        'bg1': "url('https://th.bing.com/th/id/R.21336ecd5f307ce30a3b98e8a0f42246?rik=JPqqpUkAcKxMOg&riu=http%3a%2f%2fwallsdesk.com%2fwp-content%2fuploads%2f2016%2f11%2fMorning-HD-Background-.jpg&ehk=pzbmUz1JuwoI04NaB4U5adR7xRvQqkiMU5Q%2fVv%2f1jCk%3d&risl=&pid=ImgRaw&r=0')",
         'bg2': "url('./src/assets/background1.jpg')",
-        'bg3': "url('./src/assets/background2.jpg')",
+        'bg3': "url('https://64.media.tumblr.com/bf9955276ed67855d0b63f7b3acf8ad2/tumblr_noazklQ43Z1t0mstoo1_1280.jpg')",
       },
       colors: {
         'rain1': '#748fad',
