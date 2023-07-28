@@ -5,6 +5,7 @@
 ## Description
 
 The React Weather Web App is a simple and intuitive web application that allows users to check the current weather and the 5-day weather forecast for any city worldwide. It leverages the power of React to provide a smooth user interface and real-time weather data from the OpenWeatherMap API.
+
 With this weather app, users can easily stay informed about the weather conditions, plan their outdoor activities, and make travel decisions based on up-to-date weather forecasts. The app displays essential weather information such as temperature, humidity, wind speed, and weather descriptions, providing a comprehensive view of the current and future weather outlook.
 
 ## Features
