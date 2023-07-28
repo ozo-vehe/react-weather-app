@@ -24,7 +24,7 @@ With this weather app, users can easily stay informed about the weather conditio
 
 To run the React Weather Web App locally, follow these steps:
 
-1. Clone the repository: `git clone <repository_url>`
+1. Clone the repository: `git clone https://github.com/ozo-vehe/react-weather-app.git`
 2. Navigate to the project directory: `cd react-weather-app`
 3. Install dependencies: `npm install`
 4. Start the development server: `npm run dev`
