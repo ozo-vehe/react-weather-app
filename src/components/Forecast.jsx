@@ -1,6 +1,6 @@
 import rain from '../assets/rain.png';
 import cloudy from '../assets/cloudy.png';
-// import { useEffect, useState } from 'react';
+import { temp } from '../utils/kelvinToCelsius';
 
 export default function Forecast({data}) {
   const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
@@ -60,7 +60,7 @@ export default function Forecast({data}) {
         w-40 flex flex-wrap justify-center items-center`}
     >
       <section className="w-full text-center">
-        <h2 className="w-full text-xl font-bold">{data.main.temp.toFixed()}°C</h2>
+        <h2 className="w-full text-xl font-bold">{temp(data.main.temp).toFixed(1)}°C</h2>
         <p className="w-full capitalize text-sm">{data.weather[0].description}</p>
       </section>
 

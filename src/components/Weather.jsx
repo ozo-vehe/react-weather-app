@@ -20,8 +20,6 @@ function Weather ({ lon, lat }) {
       const newArr = [];
       const currentDate = new Date();
       const currentDay = currentDate.getDate();
-      
-      console.log(jsonData.list);
 
       for (let i = 0; i < jsonData.list.length;) {
         const weatherDate = new Date(jsonData.list[i].dt_txt);

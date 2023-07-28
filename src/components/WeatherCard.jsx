@@ -1,6 +1,7 @@
 import rain from '../assets/rain.png';
 import cloudy from '../assets/cloudy.png';
 import { useEffect, useState } from 'react';
+import { temp } from '../utils/kelvinToCelsius';
 
 export default function WeatherCard({data}) {
   const [country, setCountry] = useState("");
@@ -77,7 +78,7 @@ export default function WeatherCard({data}) {
 
       <section className="w-full h-1/2 text-center flex flex-col items-center justify-center">
         <p className="w-full mt-2 capitalize">{days[dayIndex]}</p>
-        <h2 className="w-full text-7xl">{data.main.temp.toFixed()}°C</h2>
+        <h2 className="w-full text-7xl">{temp(data.main.temp).toFixed(1)}°C</h2>
         <p className="w-full mt-2 capitalize">{data.weather[0].description}</p>
       </section>
 

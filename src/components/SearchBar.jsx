@@ -1,9 +1,10 @@
 import { useState } from "react";
 
-function SearchBar ({ coordinates, setLoading }) {
+function SearchBar ({ coordinates, setLoading, error }) {
   const [input, setInput] = useState(null);
   
   const getCoordinates = async() => {
+    error({error: false});
     setLoading({loading: true});
     try{
       const getLoaction = await fetch(`https://nominatim.openstreetmap.org/?addressdetails=1&q=${input}&format=json&limit=1`)
@@ -15,7 +16,7 @@ function SearchBar ({ coordinates, setLoading }) {
       })
       setLoading({loading: false});
     } catch(err) {
-      console.log(err);
+      error({error: true});
     }
   }
     
